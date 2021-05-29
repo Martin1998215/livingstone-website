@@ -40,7 +40,7 @@ let countTxt = 0;
 
 setInterval(function () {
     countTxt++;
-    if (countTxt > textArray.length) {
+    if (countTxt > textArray.length - 1) {
         countTxt = 0;
     }
     textPartFour.innerHTML = textArray[countTxt];
