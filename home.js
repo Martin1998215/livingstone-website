@@ -53,34 +53,34 @@ const homeTextBackgroundText = document.querySelector(".home-part-5-right-upper-
 
 const backgroundArray = [
     {
-        img: "url(room2.jpg)",
+        pic: "url(room2.jpg)",
         text: "Accommodation"
     },
     {
-        img: "url(rest2.jpg)",
+        pic: "url(rest2.jpg)",
         text: "Restaurant"
     },
     {
-        img: "url(pro2.jpg)",
+        pic: "url(pro2.jpg)",
         text: "Conference"
     },
     {
-        img: "url(bar2.jpg)",
+        pic: "url(bar2.jpg)",
         text: "Bar"
     },
     {
-        img: "url(host.jpg)",
+        pic: "url(host.jpg)",
         text: "Hosting"
     }
 ]
 
 let countBG = 0;
 
-// setInterval(() => {
-//     countBG++;
-//     if (countBG > backgroundArray.length) {
-//         countBG = 0;
-//     }
-//     // homeTextBackgroundText.innerHTML = backgroundArray[countBG].text;
-//     homeTextBackground.style.backgroundImage = backgroundArray[countBG].img;
-// }, 6000)
+setInterval(() => {
+    countBG++;
+    if (countBG > backgroundArray.length) {
+        countBG = 0;
+    }
+    homeTextBackgroundText.innerHTML = backgroundArray[countBG].text;
+    homeTextBackground.style.backgroundImage = backgroundArray[countBG].pic;
+}, 6000)
