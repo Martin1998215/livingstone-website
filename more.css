@@ -109,8 +109,7 @@ li a {
     padding: 0px 10px;
     /* text-shadow: -0.4px 0 black, 0 0.4px black, 0.4px 0 black, 0 -0.4px black; */
     color: hsla(15, 80%, 20%, 0.7 );
-    border-left: 7px solid purple;
-    border-radius: 3px;
+    border-left: 5px solid purple;
     margin: 20px 5px;
 }
 .more-all h3 {

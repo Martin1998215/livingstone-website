@@ -1,13 +1,13 @@
 const highlightsImg = document.querySelector(".home-part-1-left-img")
 
 const highlightsArray = [
-    'pro1.jpg', 'pro2.jpg', 'pro3.jpg', 'pro4.jpg'
+    'pro3.jpg', 'pro9.jpg', 'pro1.jpg', 'pro2.jpg'
 ]
 let counter = 0;
 
 setInterval(() => {
     counter++;
-    if (counter > highlightsArray.length) {
+    if (counter > highlightsArray.length - 1) {
         counter = 0;
     }
     highlightsImg.src = highlightsArray[counter];
@@ -30,7 +30,8 @@ setInterval(() => {
 }, 150);
 
 const textArray = [
-    "Executive Double - K1000",
+    "Presidential Suite: K1000",
+    "Executive Double - K300",
     "Executive Twin - K350",
     "Family Room - K370"
 ];
@@ -61,7 +62,7 @@ const backgroundArray = [
         text: "Restaurant"
     },
     {
-        pic: "url(pro2.jpg)",
+        pic: "url(room6.jpg)",
         text: "Conference"
     },
     {
@@ -69,7 +70,7 @@ const backgroundArray = [
         text: "Bar"
     },
     {
-        pic: "url(host.jpg)",
+        pic: "url(pro10.jpg)",
         text: "Hosting"
     }
 ]
@@ -83,4 +84,74 @@ setInterval(() => {
     }
     homeTextBackgroundText.innerHTML = backgroundArray[countBG].text;
     homeTextBackground.style.backgroundImage = backgroundArray[countBG].pic;
-}, 6000)
+}, 6000);
+
+function menuTabs(menu) {
+    const x = document.querySelectorAll(".middle-all");
+    for (let i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+    }
+
+    document.getElementById(menu).style.display = 'block';
+}
+
+document.getElementById('link').click();
+
+
+
+
+const siteGalleryArray = [
+    {
+        img: 'pro2.jpg',
+        text: 'Front Angular View'
+    },
+    {
+        img: 'pro11.jpg',
+        text: 'Front Angular View'
+    },
+    {
+        img: 'pro6.jpg',
+        text: 'Front Greener View'
+    },
+    {
+        img: 'pro12.jpg',
+        text: 'Back View'
+    },
+    {
+        img: 'pro7.jpg',
+        text: 'Back view'
+    },
+    {
+        img: 'pro15.jpg',
+        text: 'Luxury View'
+    },
+    {
+        img: 'pro14.jpg',
+        text: 'Back Inner view'
+    }
+]
+let siteCounter = 0;
+
+const galleryImg = document.querySelector(".middle-photo");
+const galleryText = document.querySelector(".middle-text");
+
+const galleryPreviousBtn = document.querySelector(".mid-prev-btn");
+const galleryNextBtn = document.querySelector(".mid-next-btn");
+
+galleryPreviousBtn.addEventListener("click", () => {
+    siteCounter--;
+    if (siteCounter < 0) {
+        siteCounter = siteGalleryArray.length - 1;
+    }
+    galleryImg.src = siteGalleryArray[siteCounter].img;
+    galleryText.innerHTL = siteGalleryArray[siteCounter].text;
+})
+
+galleryNextBtn.addEventListener("click", () => {
+    siteCounter++;
+    if (siteCounter > siteGalleryArray.length - 1) {
+        siteCounter = 0;
+    }
+    galleryImg.src = siteGalleryArray[siteCounter].img;
+    galleryText.innerHTML = siteGalleryArray[siteCounter].text;
+})

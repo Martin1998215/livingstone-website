@@ -438,6 +438,65 @@ background: white;
     padding:10px 0;
 }
 
+.middle-part {
+    width: 100%;
+    margin: 30px auto;
+    display: none;
+}
+.middle-cover {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+.middle-phone {
+    width:100%;
+    margin: 20px auto;
+    display: block;
+    border-top: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;
+    padding: 10px 0;
+}
+.middle-phone h3 {
+    padding-left: 10px;
+}
+.middle-text {
+    padding: 0 5px 10px;
+}
+.middle-photo {
+    width: 100%;
+    height: 330px;
+    padding: 10px 0;
+    position: relative;
+}
+.middle-btn-section {
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: absolute;
+    top: 2550px;
+    left: 3%;
+}
+.mid-prev-btn, .mid-next-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+}
+
+
 @media only screen and (min-width: 600px){
     .ul-home {
         flex-direction: row;
@@ -576,7 +635,7 @@ animation-fill-mode: forwards;
     justify-content: space-between;
 }
 .home-part-3-cover {
-    width: 30%;
+    width: 20%;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
@@ -598,7 +657,7 @@ width: 40%;
 .home-part-5 {
     width: 96%;
     height: 500px;
-    margin: 60px auto;
+    margin: 10px auto 60px;
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
@@ -632,7 +691,7 @@ width: 40%;
     padding-left: 10px;
 }
 .home-part-5-text {
-    padding: 10px 20px 0 5%;
+    padding: 60px 20px 0 5%;
 }
 .home-part-5-cover-photo {
     width: 100%;
@@ -721,6 +780,54 @@ width: 40%;
 }
 .footer-1 p {
     padding:10px 0;
+}
+.middle-part {
+    width: 80%;
+    margin: 50px auto;
+    border-top: 0.5px solid gray;
+    padding-top: 10px;
+    display: block;
+}
+.middle-cover {
+    width: 100%;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.mid-part-1 {
+    width: 70%;
+    height: 100%;
+    border-bottom: 0.5px solid gray;
+    padding-bottom: 10px;
+}
+.middle-all {
+    width: 100%;
+    height: 100%;
+}
+.middle-cover-photo {
+    width: 100%;
+    height: 85%;
+    padding-bottom: 10px;
+}
+.mid-part-2 {
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+}
+.middle-side-cover {
+    width: 80%;
+    height: 20%;
+    margin: 20px 0;
+}
+.middle-side-photo {
+    width: 100%;
+    height: 90%;
+    padding-bottom: 5px;
+}
+.middle-phone {
+    display: none;
 }
 
 }

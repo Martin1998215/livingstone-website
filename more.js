@@ -27,65 +27,57 @@ setInterval(() => {
 
 const siteGalleryArray = [
     {
+        img: 'pro3.jpg',
+        text: 'Outside View'
+    },
+    {
+        img: 'pro9.jpg',
+        text: 'Entrance'
+    },
+    {
         img: 'pro1.jpg',
         text: 'Front Side'
     },
     {
         img: 'pro2.jpg',
-        text: 'Front side'
+        text: 'Front Side'
     },
     {
-        img: 'pro3.jpg',
-        text: 'Front Side'
+        img: 'pro11.jpg',
+        text: 'Front view'
+    },
+    {
+        img: 'pro6.jpg',
+        text: 'Greener View'
+    },
+    {
+        img: 'pro12.jpg',
+        text: 'Back view'
+    },
+    {
+        img: 'pro14.jpg',
+        text: 'Interior view'
+    },
+    {
+        img: 'pro7.jpg',
+        text: 'Back view'
+    },
+    {
+        img: 'pro10.jpg',
+        text: 'Back view'
     },
     {
         img: 'reception1.jpg',
         text: 'Reception'
     },
     {
-        img: 'reception2.jpg',
-        text: 'Reception'
+        img: 'Toilet1.jpg',
+        text: 'Toilet/Show'
     },
 
     {
-        img: 'more2.jpg',
-        text: 'passage'
-    },
-    {
-        img: 'more3.jpg',
-        text: 'passage'
-    },
-    {
-        img: 'room3.jpg',
+        img: 'room4.jpg',
         text: 'Rooms'
-    },
-    {
-        img: 'room5.jpg',
-        text: 'Rooms'
-    },
-    {
-        img: 'room9.jpg',
-        text: 'Rooms'
-    },
-    {
-        img: 'toilet1.jpg',
-        text: 'Toilets'
-    },
-    {
-        img: 'toilet2.jpg',
-        text: 'Bathing tab'
-    },
-    {
-        img: 'toilet5.jpg',
-        text: 'Bathing Tab'
-    },
-    {
-        img: 'rest1.jpg',
-        text: 'Restaurant'
-    },
-    {
-        img: 'bar1.jpg',
-        text: 'Bar'
     }
 ]
 let counter = 0;

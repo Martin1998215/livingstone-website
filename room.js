@@ -50,5 +50,5 @@ setInterval(() => {
     if (roomCount > roomAll.length - 1) {
         roomCount = 0;
     }
-    roomAllContainer.style.transform = "translateX(" + -roomCount * 200 + "px)";
+    roomAllContainer.style.transform = "translateY(" + -roomCount * 250 + "px)";
 }, 3000);
