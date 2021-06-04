@@ -155,3 +155,20 @@ galleryNextBtn.addEventListener("click", () => {
     galleryImg.src = siteGalleryArray[siteCounter].img;
     galleryText.innerHTML = siteGalleryArray[siteCounter].text;
 })
+
+
+const eventText = "No events at the moment ..... No Events at the moment .... No Events at the moment .... No Events at the moment.... ";
+const showEventText = document.querySelector(".event-words");
+
+
+let eventIndex = 0;
+
+setInterval(() => {
+    eventIndex++;
+    if (eventIndex > eventText.length) {
+        eventIndex = 0;
+    }
+    showEventText.innerHTML = eventText.slice(0, eventIndex);
+}, 150);
+
+
