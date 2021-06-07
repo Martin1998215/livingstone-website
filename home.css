@@ -389,9 +389,9 @@ background: white;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    height: 120px;
+    height: 280px;
     background: black;
     color: white;
     padding: 7px;
@@ -422,6 +422,27 @@ background: white;
     align-items: center;
     color: black;
 }
+.events-upper h1 {
+    padding-bottom: 40px;
+    color: blueviolet;
+    font-size: 30px;
+    margin-top: 10px;
+    }
+    .events-color {
+        background: white;
+        color: red;
+        padding:5px;
+    }
+    .event-date {
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .event-date h2 {
+        padding:10px 5px;
+    }
 
 .home-part-6 {
     width: 96%;
@@ -519,7 +540,7 @@ background: white;
 .middle-photo {
     width: 100%;
     height: 330px;
-    padding: 10px 0;
+    padding: 5px 0;
     position: relative;
 }
 .middle-btn-section {
@@ -528,13 +549,11 @@ background: white;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    position: absolute;
-    top: 2550px;
-    left: 3%;
+
 }
 .mid-prev-btn, .mid-next-btn {
-    width: 50px;
-    height: 50px;
+    width: 45%;
+    height: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -542,11 +561,10 @@ background: white;
     padding: 10px;
     font-weight: bolder;
     font-size: 20px;
-    background: black;
+    background: lightgray;
     color: white;
-    border-radius: 50%;
+    border-radius: 10px;
     border: none;
-    opacity: 0.5;
 }
 .event-words {
     display: none;
@@ -793,7 +811,7 @@ width: 40%;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
     width: 60%;
     margin: 0 auto;
@@ -802,6 +820,41 @@ width: 40%;
     color: white;
     overflow: hidden;
     padding: 5px;
+}
+.events-upper {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.events-upper h1 {
+padding-bottom: 40px;
+color: blueviolet;
+font-size: 60px;
+margin-top: 10px;
+}
+.events-color {
+    background: white;
+    color: red;
+    padding:5px;
+}
+.event-date {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.event-date h2 {
+    padding:10px 5px;
+}
+.events-lower {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .event-left {
     width: 30%;
