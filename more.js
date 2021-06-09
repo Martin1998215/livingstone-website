@@ -10,21 +10,6 @@ function menuTabs(menu) {
 document.getElementById('link').click();
 
 
-
-const siteText = "Welcome to Livingstone Lodge, Hostels Board Of Management site gallery section where we display images about our lodge and the businesses around";
-const showText = document.querySelector(".site-words");
-
-let index = 0;
-
-setInterval(() => {
-    index++;
-    if (index > siteText.length) {
-        index = 0;
-    }
-    showText.innerHTML = siteText.slice(0, index);
-}, 150);
-
-
 const siteGalleryArray = [
     {
         img: 'pro3.jpg',
@@ -219,3 +204,15 @@ function getDisplay() {
 //getDisplay();
 
 let vay = setInterval(getDisplay, 1000);
+
+
+function menuList(menu) {
+    const x = document.querySelectorAll(".menu-all");
+    for (let i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+    }
+
+    document.getElementById(menu).style.display = 'block';
+}
+
+document.getElementById('linked').click();

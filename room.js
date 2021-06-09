@@ -11,21 +11,15 @@ document.getElementById('link').click();
 
 const doubleBtn = document.querySelector(".doubleBtn");
 const twinBtn = document.querySelector(".twinBtn");
-const familyBtn = document.querySelector(".familyBtn");
 
 doubleBtn.addEventListener("click", function () {
     active(doubleBtn);
-    inActive([twinBtn, familyBtn]);
+    inActive([twinBtn]);
 });
 
 twinBtn.addEventListener("click", function () {
     active(twinBtn);
-    inActive([doubleBtn, familyBtn]);
-});
-
-familyBtn.addEventListener("click", function () {
-    active(familyBtn);
-    inActive([twinBtn, doubleBtn]);
+    inActive([doubleBtn]);
 });
 
 function active(elem) {
@@ -38,7 +32,9 @@ function inActive(elemArray) {
     });
 }
 
-
+const roomArray = [
+    "url('room2.jpg')", "url('room1.jpg')", "url('room3.jpg')", "url('room4.jpg')", "url('room6.jpg')", "url('toilet1.jpg')",
+]
 
 const roomAll = document.querySelectorAll(".room-right-slide img");
 
@@ -52,3 +48,25 @@ setInterval(() => {
     }
     roomAllContainer.style.transform = "translateY(" + -roomCount * 250 + "px)";
 }, 3000);
+
+let status = 0;
+const roomImg = document.querySelector(".room-all-photo");
+
+const roomPrevBtn = document.querySelector(".room-prev-btn");
+const roomNextBtn = document.querySelector(".room-next-btn");
+
+roomPrevBtn.addEventListener("click", () => {
+    status--;
+    if (status < 0) {
+        status = roomArray.length - 1;
+    }
+    roomImg.style.backgroundImage = roomArray[status];
+})
+
+roomNextBtn.addEventListener("click", () => {
+    status++;
+    if (status > roomArray.length - 1) {
+        status = 0;
+    }
+    roomImg.style.backgroundImage = roomArray[status];
+})

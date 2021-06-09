@@ -30,7 +30,7 @@ setInterval(() => {
 }, 150);
 
 const textArray = [
-    "Presidential Suite: K1000",
+    "Deluxe Suite: K1000",
     "Executive Double - K300",
     "Executive Twin - K350",
     "Family Room - K370"
