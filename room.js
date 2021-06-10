@@ -33,7 +33,7 @@ function inActive(elemArray) {
 }
 
 const roomArray = [
-    "url('room2.jpg')", "url('room1.jpg')", "url('room3.jpg')", "url('room4.jpg')", "url('room6.jpg')", "url('toilet1.jpg')",
+    "url('room2.jpg')", "url('room3.jpg')", "url('room4.jpg')", "url('room7.jpg')", "url('room8.jpg')", "url('room11.jpg')", "url('toilet1.jpg')",
 ]
 
 const roomAll = document.querySelectorAll(".room-right-slide img");
