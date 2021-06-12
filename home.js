@@ -13,7 +13,7 @@ setInterval(() => {
     highlightsImg.src = highlightsArray[counter];
     // highlightText.innerHTML = highlightsArray[counter].text;
 
-}, 10000)
+}, 3000)
 
 
 const text = "Our ability to take you anywhere in the country is our profound pleasure and strength.......";

@@ -74,10 +74,20 @@ li a {
 .sticker {
     font-size: 20px;
     position: fixed;
-    bottom: 7px;
-    right: 10px;
-    border: 1px solid black;
+    bottom: 10px;
+    right: 15%;
     padding: 5px;
+    background: blue;
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sticker a {
+    text-decoration: none;
+    color: white;
 }
 .home-cover {
     width: 100%;
@@ -98,6 +108,7 @@ li a {
 width: 100%;
 height: 100%;
 display: block;
+object-fit: cover;
 }
 .home-cover-right {
     width: 70%;
@@ -108,6 +119,7 @@ display: block;
     width: 100%;
     height: 100%;
     display: none;
+    object-fit: cover;
 }
 .home-cover-words {
     position: absolute;
@@ -167,11 +179,11 @@ text-align: center;
 .home-part-1-left-img {
     width: 100%;
     height: 300px;
-    opacity: 0.2;
+    /* opacity: 0.2;
     animation-name: highlights-photo;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 @keyframes highlights-photo {
@@ -251,7 +263,8 @@ background: white;
 }
 .home-part-3-cover-photo {
     width: 100%;
-    height: 70%;
+    height: 90%;
+object-fit: cover;
 }
 .home-part-3-cover-text {
     padding: 5px 10px;
@@ -333,7 +346,7 @@ background: white;
 .con-img {
     width: 100%;
     height: 100%;
-
+object-fit: cover;
 }
 
 .home-part-4 {
@@ -427,6 +440,7 @@ background: white;
 .home-part-5-cover-photo {
     width: 100%;
     height: 250px;
+    object-fit: cover;
 }
 .home-part-5-right-upper {
     width: 100%;
@@ -441,6 +455,7 @@ background: white;
     background-image: url(room2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .home-part-5-right-lower {
     width: 100%;
@@ -462,6 +477,7 @@ background: white;
 .event-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .event-section {
@@ -621,6 +637,7 @@ background: white;
     height: 330px;
     padding: 5px 0;
     position: relative;
+    object-fit: cover;
 }
 .middle-btn-section {
     width: 94%;
@@ -775,6 +792,7 @@ animation-fill-mode: forwards;
 .home-part-1-left-img {
     width: 100%;
     height: 400px;
+    object-fit: cover;
 }
 .home-part-2 {
 
@@ -894,6 +912,7 @@ width: 40%;
     height: 100%;
 border: 2px solid green;
 border-radius: 5px;
+object-fit: cover;
 }
 .home-part-5 {
     width: 96%;
@@ -937,6 +956,7 @@ border-radius: 5px;
 .home-part-5-cover-photo {
     width: 100%;
     height: 90%;
+    object-fit: cover;
 }
 .home-part-5-right-upper {
     width: 100%;
@@ -951,6 +971,7 @@ border-radius: 5px;
     background-image: url(room2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .home-part-5-right-lower {
     width: 100%;
@@ -973,6 +994,7 @@ border-radius: 5px;
 .event-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .event-section {
     display: flex;
@@ -1164,6 +1186,7 @@ margin-top: 10px;
     width: 100%;
     height: 85%;
     padding-bottom: 10px;
+    object-fit: cover;
 }
 .mid-part-2 {
     width: 25%;
@@ -1183,6 +1206,23 @@ margin-top: 10px;
 .middle-phone {
     display: none;
 }
-
+.sticker {
+    font-size: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background: blue;
+    color: white;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sticker a {
+    text-decoration: none;
+    color: white;
+}
 
 }
