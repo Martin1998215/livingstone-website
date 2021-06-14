@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -46,9 +48,9 @@
 
         </div>
 
-        <h2 class="home-text-1">Livingstone Lodge, Hostels Board of Management</h2>
+        <h2 class="home-text-1" data-aos="fade-up">Livingstone Lodge, Hostels Board of Management</h2>
 
-        <div class="home-part-1">
+        <div class="home-part-1" data-aos="fade-up">
             <div class="home-part-1-left">
                 <img src="pro3.jpg" alt="photo" class="home-part-1-left-img" />
             </div>
@@ -70,7 +72,7 @@
             </div>
         </div>
 
-        <div class="home-part-2">
+        <div class="home-part-2" data-aos="fade-up">
             <div class="home-part-2-left">
                 <h1 class="home-part-2-left-text-1"></h1>
                 <h2 class="home-part-2-left-text-2">Discover Zambia with us, Be our Guest!!</h2>
@@ -86,7 +88,7 @@
             </ul>
         </div>
 
-        <div class="middle-part">
+        <div class="middle-part" data-aos="fade-up">
             <h3>Site Gallery</h3>
             <div class="middle-cover">
                 <div class="mid-part-1">
@@ -176,7 +178,7 @@
             </div>
         </div>
 
-        <div class="middle-phone">
+        <div class="middle-phone" data-aos="fade-up">
             <h3>Site Gallery</h3>
             <img src="pro2.jpg" alt="Photo" class="middle-photo" />
             <h4 class="middle-text">Front Angular View</h4>
@@ -188,8 +190,8 @@
 
         </div>
 
-        <h3 class="home-part-3-text">Trending Rooms</h3>
-        <div class="home-part-3">
+        <h3 class="home-part-3-text" data-aos="fade-up">Trending Rooms</h3>
+        <div class="home-part-3" data-aos="fade-up">
 
             <div class="home-part-3-1-all">
                 <div class="home-part-3-1">
@@ -222,7 +224,7 @@
                         </div>
                     </div>
 
-                    <div class="home-part-4">
+                    <div class="home-part-4" data-aos="fade-up">
                         <div class="home-part-4-text-section">
                             <h4 class="home-part-4-text">Executive Double- k1000</h4>
                         </div>
@@ -235,7 +237,7 @@
             </div>
         </div>
 
-        <div class="conf-section">
+        <div class="conf-section" data-aos="fade-up">
             <div class="con-left">
                 <h2>Conference Room</h2>
                 <div class="con-color"></div>
@@ -252,8 +254,8 @@
         </div>
 
 
-        <h3 class="home-part-5-text">More From Livingstone Lodge</h3>
-        <div class="home-part-5">
+        <h3 class="home-part-5-text" data-aos="fade-up">More From Livingstone Lodge</h3>
+        <div class="home-part-5" data-aos="fade-up">
 
             <div class="home-part-5-left">
                 <div class="home-part-5-cover">
@@ -281,7 +283,7 @@
 
         </div>
 
-        <div class="event-container">
+        <div class="event-container" data-aos="fade-up">
             <div class="event-img-cover">
                 <img src="pro11.jpg" alt="Photo" class="event-img" />
             </div>
@@ -311,7 +313,7 @@
         </div>
         <h4 class="event-words"></h4>
 
-        <div class="home-part-6">
+        <div class="home-part-6" data-aos="fade-up">
             <div class="home-part-6-cover">
                 <div class="home-part-6-cover-left">
                     <h3>About Us</h3>
@@ -334,7 +336,7 @@
                 </div>
             </div>
         </div>
-        <div class="home-footer">
+        <div class="home-footer" data-aos="fade-up">
             <div class="footer-part-1">
                 <div class="footer-1">
                     <h3>OTHER OUTLETS</h3>
@@ -381,6 +383,15 @@
     <script src="home.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7v9e7TmnfC1yyBr8fzNkWRQmtghvvqOM&callback=initMap&libraries=&v=weekly"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 600
+        });
+    </script>
+
 </body>
 
 </html>
