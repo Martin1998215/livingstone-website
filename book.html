@@ -30,11 +30,21 @@
                 <p>We will reply within 24 hours, but usually within just a couple of hours</p>
             </div>
             <div class="cover">
-                <div class="contact-section" data-aos="fade-up">
+                <!-- <div class="contact-section" data-aos="fade-up">
                     <input type="text" class="input" placeholder="Enter Name" />
                     <input type="email" class="input" placeholder="Enter Email" />
                     <textarea cols="60" rows="5">Write A Message</textarea>
                     <button type="button" class="btn">Send</button>
+                </div> -->
+                <div class="contact-section" data-aos="fade-up">
+                    <form name="updates" method="POST" data-netlify="true">
+                        <input type="text" class="input" id="name" name="name" placeholder="name" />
+                        <input type="email" class="input" id="email" name="email" placeholder="Email" />
+                        <textarea name="message" id="message" placeholder="Write Message"
+                            rows="6">Write A Message</textarea>
+                        <div data-netlify-recaptcha="true"></div>
+                        <button type="submit" class="btn" id="submit">Send</button>
+                    </form>
                 </div>
                 <div id="map" data-aos="fade-up">
                     <!-- <img src="pro9.jpg" alt="map" class="img-map" /> -->
@@ -44,16 +54,16 @@
                     <p>Phone: +260-213-320647</p>
                     <p>Email: livingstonelodge7@gmail.com</p>
                     <p>Address: P.O Box 61177, Livingstone</p>
-                    <h3>Where To Find Us</h3>
+                    <h3 style="color: blue">Where To Find Us</h3>
+                    <p>Maramba Road Plot 01 Next To Livingstone Central Police Station</p>
                     <div class="media">
-                        <img src="fb.png" alt='photo' class="media-photo" />
-                        <img src="twitter.png" alt='photo' class="media-photo" />
+
                     </div>
                 </div>
             </div>
         </div>
         <img src="pro1.jpg" alt="photo" class="book-footer" data-aos="fade-up" />
-        <p class="footer-text" data-aos="fade-up">LIVINGSTONE LODGE, hOSTELS BOARD OF MANAGEMENT</p>
+        <p class="footer-text" data-aos="fade-up">LIVINGSTONE LODGE, HOSTELS BOARD OF MANAGEMENT</p>
         <P class="footer-text" data-aos="fade-up">Copyrights &copy;2021</P>
     </div>
     </div>
