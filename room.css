@@ -115,6 +115,7 @@ li a {
     margin: 0px auto 30px;
 
 }
+
 .room-right-header h3 {
     font-weight: bolder;
     color: blue;
@@ -141,10 +142,7 @@ li a {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    border-top: 0.3px solid lightgray;
-    border-bottom: 0.3px solid lightgray;
-    padding-bottom: 10px;
-    padding-top: 10px;
+background: white;
 }
 .room-highlights {
     padding: 10px 10px 5px;
@@ -162,15 +160,7 @@ li a {
     transform: translateY(0);
     transition: transform 0.5s linear;
 }
-.room-menu-right p {
-    padding: 5px 10px;
-    background: lightgray;
-    border-radius: 5px;
-    margin: 5px;
-    width: 45%;
-    text-align: center;
-    cursor: pointer;
-}
+
 .room-right-main {
     margin: 30px auto;
     width: 100%;
@@ -209,6 +199,24 @@ li a {
     margin:30px auto;
     padding: 0 10px;
 }
+.room-menu-right {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    border-top: none;
+
+}
+.room-menu-click {
+    display: none;
+}
+.doubleBtn, .twinBtn {
+    width: 50%;
+    text-align: center;
+    padding: 5px 30px;
+    background: white;
+ cursor: pointer;
+}
 .room-prev-btn, .room-next-btn {
     width: 50px;
     height: 50px;
@@ -232,7 +240,9 @@ li a {
     padding: 10px 0;
 }
 .active {
-    color: red;
+    background: gray;
+    color: black;
+    width: 50%;
 }
 .room-all-title-cover {
     width: 98%;
@@ -277,6 +287,11 @@ li a {
         flex-direction: row;
         justify-content: space-between;
       
+    }
+    .active {
+        background: gray;
+        color: black;
+        width: 30%;
     }
     .room-left {
         position: fixed;
@@ -337,10 +352,19 @@ li a {
     justify-content: space-between;
     border-top: none;
 }
-.room-menu-right p {
+.room-menu-click {
+    display: block;
+    width: 40%;
+    padding: 5px 10px;
+    text-align: center;
+    background: #226;
+}
+.doubleBtn, .twinBtn {
     width: 30%;
     text-align: center;
     padding: 5px 30px;
+    background: white;
+    padding: 5px 10px;
  margin: 0;
  cursor: pointer;
 }
@@ -457,6 +481,11 @@ li a {
         transform: translateX(0);
         transition: transform 0.5s linear;
     }
+    .active {
+        background: gray;
+        color: black;
+        width: 30%;
+    }
     .room-right {
         width: 60%;
         margin-left: 35%;
@@ -483,20 +512,7 @@ li a {
     height: 250px;
     padding: 30px 0;
 }
-.room-menu-right {
-    width: 100%;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    border-top: none;
-}
-.room-menu-right p {
-    width: 30%;
-    text-align: center;
-    padding: 5px 30px;
- margin: 0;
- cursor: pointer;
-}
+
 .room-right-main {
     margin: 30px auto;
     width: 100%;
