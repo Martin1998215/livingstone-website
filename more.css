@@ -257,7 +257,137 @@ table, th, td {
     padding: 10px 0;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 768px){
+    .ul-home {
+        flex-direction: row;
+        height: 60px;
+        padding: 0 10px;
+        align-items: center; 
+        justify-content: space-between;
+    }
+   
+    .left-ul {
+        width: 40%;
+        flex-direction: row;
+    }  
+    .left-head {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    .right-ul {
+        width: 50%;
+    }
+    li a {
+        font-size: 17px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .more-main-section {
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 60px 0 20px;
+    }
+    .more-left {
+        width:35%;
+        background: white;
+        padding: 10px;
+box-shadow: 0 0 5px black;
+        position: fixed;
+        left: 0;
+        overflow: auto;
+        height: 100%;
+
+    }
+    .more-left-head {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        display: block;
+    }
+    .more-ul {
+        width: 100%;
+        padding-left: 10px;
+        margin: 30px auto;
+        border-bottom: 1px solid black;
+        flex-direction: column;
+    }
+    .more-ul li {
+        padding: 10px 0;
+    }
+    .more-right {
+        width: 100%;
+        margin-left: 40%;
+        padding: 20px 10px;
+    }
+   
+    .more-all p {
+        padding: 10px;
+    }
+    .more-main-photo {
+        width: 100%;
+        height: 500px;
+        padding: 30px 10px;
+        object-fit: cover;
+    }
+    .site {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .site-container {
+        padding: 30px;
+    }
+    .site-cover-photo {
+        height: 400px;
+    }
+    .site-words {
+        height: 120px;
+    }
+ .promo-img-1 {
+     height: 400px;
+ }   
+table {
+    width: 80%;
+    margin: 20px 0;
+}
+th {
+    font-size: 30px;
+}
+td {
+    font-size: 20px;
+}
+.span-text {
+    display: none;
+}
+.h4 {
+    width: 90%;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    background: rgba(40, 10, 0, 1);
+    color: white;
+    
+}
+.about-img {
+    height: 400px;
+    padding: 20px 0;
+}
+#main h3 {
+    width: 40%;
+}
+.menu-lower {
+    height: 300px;
+}
+}
+
+@media only screen and (min-width: 992px){
     .ul-home {
         flex-direction: row;
         height: 60px;

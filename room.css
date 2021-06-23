@@ -242,7 +242,162 @@ li a {
     border-radius: 10px;
 }
 
-@media only screen and (min-width: 600px){
+
+
+@media only screen and (min-width: 768px){
+    .ul-home {
+        flex-direction: row;
+        height: 60px;
+        padding: 0 10px;
+        align-items: center; 
+        justify-content: space-between;
+    }
+   
+    .left-ul {
+        width: 40%;
+        flex-direction: row;
+    }  
+    .left-head {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    .right-ul {
+        width: 50%;
+    }
+    li a {
+        font-size: 17px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room-main-section {
+        width: 100%;
+        margin: 60px auto 20px;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-between;
+      
+    }
+    .room-left {
+        position: fixed;
+        left: 0;
+        width: 40%;
+        margin: 0;
+        background: lightgray;
+        padding: 20px;
+        overflow: auto;
+        height: 100%;
+    }
+
+    .room-right-words h1 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .room-right-slide-cover {
+        width: 100%;
+        height: 250px;
+     overflow: hidden; 
+     
+    }
+    .room-right-slide {
+        display: flex;
+        transform: translateX(0);
+        transition: transform 0.5s linear;
+    }
+    .room-right {
+        width: 58%;
+        margin-left: 42%;
+        padding: 20px;
+    }
+.room-right-header {
+    width: 90%;
+    background: white;
+    box-shadow: 2px 2px 5px black;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+.room-right-header h3 {
+    font-weight: bolder;
+    color: blue;
+}
+.room-right-photo-cover {
+    width: 80%;
+    margin: 10px auto;
+}
+.room-right-photo {
+    width: 100%;
+    height: 250px;
+    padding: 30px 0;
+}
+.room-menu-right {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    border-top: none;
+}
+.room-menu-right p {
+    width: 30%;
+    text-align: center;
+    padding: 5px 30px;
+ margin: 0;
+ cursor: pointer;
+}
+.room-right-main {
+    margin: 30px auto;
+    width: 100%;
+}
+.room-all {
+    width: 98%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+.room-all-title {
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px 10px;
+    text-align: center;
+  
+}
+.room-all-photo {
+    background-image: url('room2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 450px;
+    margin:50px auto;
+
+}
+.room-prev-btn, .room-next-btn {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background: gray;
+    font-size: 35px;
+    color: white;
+}
+
+.room-all-title-cover {
+    margin: 30px auto;
+}
+}
+
+@media only screen and (min-width: 992px){
     .ul-home {
         flex-direction: row;
         height: 60px;
