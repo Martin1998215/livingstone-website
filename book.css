@@ -96,6 +96,7 @@ li a {
 .input {
     width: 100%;
     padding: 5px 10px;
+    font-size: 18px;
     border: 1px solid gray;
     border-radius: 5px;
     margin: 10px auto;
@@ -104,6 +105,7 @@ li a {
 textarea {
     width: 100%;
     padding: 5px 10px;
+    font-size: 18px;
     border: 1px solid gray;
     border-radius: 5px;
     margin: 10px auto;
